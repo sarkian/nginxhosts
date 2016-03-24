@@ -171,9 +171,9 @@ def nginxhosts_main():
     servers = NginxServers(config_files, args.default_addr, excluded_hosts, args.config_dir, args.use_listen)
 
     if args.format == "hosts":
-        print servers.save_hosts()
+        print(servers.save_hosts())
     elif args.format == "dnsmasq":
-        print servers.save_dnsmasq()
+        print(servers.save_dnsmasq())
 
 
 if __name__ == "__main__":

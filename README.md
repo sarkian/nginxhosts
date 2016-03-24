@@ -3,7 +3,7 @@
 A Nginx configuration parser that exports finded hosts into the hosts or dnsmasq format.
 
 ```
-usage: nginxhosts.py [-h] [-c CONFIG_FILES [CONFIG_FILES ...]] [-d CONFIG_DIR] [-a DEFAULT_ADDR] [-l] [-e EXCLUDED_HOSTS]
+usage: nginxhosts [-h] [-c CONFIG_FILES [CONFIG_FILES ...]] [-d CONFIG_DIR] [-a DEFAULT_ADDR] [-l] [-e EXCLUDED_HOSTS]
                      [-f {hosts,dnsmasq}]
 
 A Nginx configuration parser that exports finded hosts into the hosts or dnsmasq format
@@ -20,7 +20,20 @@ optional arguments:
 ```
 
 
-Examples
+#### Installation
+
+Python 2:
+```bash
+pip install nginxhosts
+```
+
+Python 3:
+```bash
+pip3 install nginxhosts
+```
+
+
+#### Examples
 
 ```bash
 nginxhosts -e localhost,`hostname` >> /etc/hosts
